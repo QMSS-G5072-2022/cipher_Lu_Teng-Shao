@@ -1,0 +1,48 @@
+:py:mod:`cipher_tl3179.cipher_tl3179`
+=====================================
+
+.. py:module:: cipher_tl3179.cipher_tl3179
+
+
+Module Contents
+---------------
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   cipher_tl3179.cipher_tl3179.cipher
+
+
+
+.. py:function:: cipher(text, shift, encrypt=True)
+
+   Each letter is replaced by a letter some fixed number of positions down the alphabet
+
+   :param text: The text that we want to encrypt or decrypt.
+   :type text: string
+   :param shift:  The number of positions down to encrypt or decrpt.
+                 encrypt : boolean
+                  True if encrypt, false if decrypt.
+   :type shift: integer
+
+   :returns: The encrpted or decrypted string.
+   :rtype: string
+
+   .. rubric:: Examples
+
+   >>> from cipher_tl3179 import cipher_tl3179
+   >>> text = 'Apple'
+   >>> shift = 1
+   >>> encrypt = True
+   >>> cipher_tl3179.cipher(text, shift, encrypt):
+   'Bqqmf'
+   >>> text = 'Apple'
+   >>> shift = 1
+   >>> encrypt = False
+   >>> cipher_tl3179.cipher(text, shift, encrypt):
+   'zookd'
+
+
